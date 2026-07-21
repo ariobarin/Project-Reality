@@ -64,3 +64,7 @@ For development without cameras, `ELVINBOSS/TCP_Client` and `ELVINBOSS/generate_
 - The triangulation math assumes the two cameras are roughly coplanar with a known baseline, and it explicitly returns no position when the rays are too close to parallel to resolve cleanly.
 - Frame capture from both cameras runs in parallel via a thread pool to keep the loop near the cameras' target FPS.
 - The included demo videos (`Game_Demo.mp4`, `Mask_Demo.mp4`) show the end-to-end result: the live game responding to a physical ball, and the raw HSV masks used for detection.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
