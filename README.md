@@ -2,6 +2,10 @@
 
 Real-time 3D ball tracking that feeds live coordinates into a Unity game. Two Raspberry Pi cameras watch the play area, locate a colored ball through computer vision, triangulate its position in 3D space, and stream the result over TCP to a Unity server that uses it in-game.
 
+![Ball detection pipeline](docs/ball_detection_demo.png)
+
+The detection pipeline: the live frame with the ball localized (green circle, red center), the per-channel HSV masks, the combined majority-vote mask, and the masked ball.
+
 ## What it does and the problem it solves
 
 The goal is to bring a physical ball into a virtual world without depth sensors or motion-capture rigs. A player moves a real ball around a tracked surface, and the game reacts to that ball's 3D position in real time.
